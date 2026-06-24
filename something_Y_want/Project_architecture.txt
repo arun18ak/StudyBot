@@ -1,0 +1,19 @@
+                    User
+                      ↓
+              React Frontend
+                      ↓
+          FastAPI / Flask Backend
+                      ↓
+ ------------------------------------------------
+ |                                              |
+Academic RAG Module                 Interview AI Module
+ |                                              |
+PDF Notes Retrieval                  Resume Analyzer
+Quiz Generator                       HR Mock Interview
+Study Summarizer                     Technical Q&A
+Subject Chatbot                      Skill Recommendation
+ |
+Vector Database
+(ChromaDB / FAISS)
+ |
+LLM (Gemini/OpenAI/Llama)

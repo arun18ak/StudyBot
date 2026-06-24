@@ -1,0 +1,88 @@
+AI_Student_Assistant/
+│
+├── backend/
+│   │
+│   ├── app.py                    # Main FastAPI application
+│   ├── config.py                 # API keys and settings
+│   │
+│   ├── api/
+│   │   ├── upload_routes.py      # PDF upload APIs
+│   │   ├── chat_routes.py        # Chat APIs
+│   │   └── health_routes.py      # Health check APIs
+│   │
+│   ├── rag/
+│   │   ├── document_loader.py    # Load PDFs
+│   │   ├── text_splitter.py      # Chunk documents
+│   │   ├── embeddings.py         # Generate embeddings
+│   │   ├── vector_store.py       # ChromaDB operations
+│   │   ├── retriever.py          # Retrieve relevant chunks
+│   │   └── rag_pipeline.py       # Complete RAG workflow
+│   │
+│   ├── llm/
+│   │   ├── gemini_client.py      # Gemini integration
+│   │   ├── prompts.py            # Prompt templates
+│   │   └── response_generator.py # Generate final answer
+│   │
+│   ├── services/
+│   │   ├── pdf_service.py
+│   │   ├── chat_service.py
+│   │   └── upload_service.py
+│   │
+│   ├── database/
+│   │   ├── db.py
+│   │   └── models.py
+│   │
+│   ├── uploads/
+│   │   └── pdfs/
+│   │
+│   └── utils/
+│       ├── logger.py
+│       ├── helpers.py
+│       └── validators.py
+│
+├── frontend/
+│   │
+│   ├── public/
+│   │
+│   └── src/
+│       │
+│       ├── components/
+│       │   ├── ChatBox.jsx
+│       │   ├── MessageBubble.jsx
+│       │   ├── PDFUploader.jsx
+│       │   ├── Navbar.jsx
+│       │   └── Sidebar.jsx
+│       │
+│       ├── pages/
+│       │   ├── Home.jsx
+│       │   ├── Chat.jsx
+│       │   └── Upload.jsx
+│       │
+│       ├── services/
+│       │   └── api.js
+│       │
+│       ├── App.jsx
+│       └── main.jsx
+│
+├── chroma_db/                    # Vector database storage
+│
+├── datasets/
+│   ├── DBMS.pdf
+│   ├── CN.pdf
+│   ├── OS.pdf
+│   └── AI.pdf
+│
+├── tests/
+│   ├── test_upload.py
+│   ├── test_rag.py
+│   └── test_chat.py
+│
+├── docs/
+│   ├── architecture.md
+│   ├── api_docs.md
+│   └── user_manual.md
+│
+├── requirements.txt
+├── README.md
+├── .env
+└── .gitignore
